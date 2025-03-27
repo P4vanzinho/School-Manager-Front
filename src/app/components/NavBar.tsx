@@ -6,7 +6,7 @@ const NavBar = () => {
         <Image src="/search.png" alt="search-icon" width={14} height={14} />
         <input
           type="text"
-          placeholder="Search..."
+          placeholder="Pesquisar..."
           className="w-[200px] p-2 bg-transparent outline-none"
         />
       </div>

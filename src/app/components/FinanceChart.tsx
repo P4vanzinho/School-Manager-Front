@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import { financeChartData } from "../constants/chartDatas";
 import {
   LineChart,
   Line,
@@ -10,69 +11,6 @@ import {
   Legend,
   ResponsiveContainer,
 } from "recharts";
-
-const data = [
-  {
-    name: "Jan",
-    rendimento: 4000,
-    despesa: 2400,
-  },
-  {
-    name: "Fev",
-    rendimento: 3000,
-    despesa: 1398,
-  },
-  {
-    name: "Mar",
-    rendimento: 2000,
-    despesa: 9800,
-  },
-  {
-    name: "Abril",
-    rendimento: 2780,
-    despesa: 3908,
-  },
-  {
-    name: "Maio",
-    rendimento: 1890,
-    despesa: 4800,
-  },
-  {
-    name: "Jun",
-    rendimento: 2390,
-    despesa: 3800,
-  },
-  {
-    name: "Jul",
-    rendimento: 3490,
-    despesa: 4300,
-  },
-  {
-    name: "Ago",
-    rendimento: 3490,
-    despesa: 4300,
-  },
-  {
-    name: "Set",
-    rendimento: 3490,
-    despesa: 4300,
-  },
-  {
-    name: "Out",
-    rendimento: 3490,
-    despesa: 4300,
-  },
-  {
-    name: "Nov",
-    rendimento: 3490,
-    despesa: 4300,
-  },
-  {
-    name: "Dez",
-    rendimento: 3490,
-    despesa: 4300,
-  },
-];
 
 const FinanceChart = () => {
   return (
@@ -87,7 +25,7 @@ const FinanceChart = () => {
         <LineChart
           width={500}
           height={300}
-          data={data}
+          data={financeChartData}
           margin={{
             top: 5,
             right: 30,

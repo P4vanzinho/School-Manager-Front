@@ -4,58 +4,90 @@ export const menuItems = [
         items: [
             {
                 icon: "/home.png",
-                label: "Home",
-                href: "/"
+                label: "Início",
+                href: "/",
+                visible: ["admin", "teacher", "student", "parent"]
             },
             {
                 icon: "/teacher.png",
-                label: "Teachers",
-                href: "/teachers"
+                label: "Professores",
+                href: "/dashboard/list/teachers",
+                visible: ["admin", "teacher"]
             },
             {
                 icon: "/student.png",
-                label: "Students",
-                href: "/students"
+                label: "Estudantes",
+                href: "/dashboard/list/students",
+                visible: ["admin", "teacher"]
             },
             {
                 icon: "/parent.png",
-                label: "Parents",
-                href: "/parents"
+                label: "Pais",
+                href: "/dashboard/list/parents",
+                visible: ["admin", "teacher"]
+            },
+            {
+                icon: "/subject.png",
+                label: "Matérias",
+                href: "/dashboard/list/subjects",
+                visible: ["admin"],
             },
             {
                 icon: "/class.png",
-                label: "Classes",
-                href: "/classes"
+                label: "Aulas",
+                href: "/dashboard/list/classes",
+                visible: ["admin", "teacher"]
             },
             {
                 icon: "/lesson.png",
-                label: "Lessons",
-                href: "/lessons"
+                label: "Lições",
+                href: "/dashboard/list/lessons",
+                visible: ["admin", "teacher"]
             },
             {
                 icon: "/exam.png",
-                label: "Exams",
-                href: "/exams"
+                label: "Provas",
+                href: "/dashboard/list/exams",
+                visible: ["admin", "teacher", "student", "parent"]
+
             },
             {
                 icon: "/assignment.png",
-                label: "Assignments",
-                href: "/assignments"
+                label: "Atribuições",
+                href: "/dashboard/list/assignments",
+                visible: ["admin", "teacher", "student", "parent"]
             },
             {
                 icon: "/attendance.png",
-                label: "Attendance",
-                href: "/attendance"
+                label: "Presenças",
+                href: "/dashboard/list/attendance",
+                visible: ["admin", "teacher", "student", "parent"]
+            },
+
+            {
+                icon: "/result.png",
+                label: "Resultados",
+                href: "/dashboard/list/results",
+                visible: ["admin", "teacher", "student", "parent"],
+            },
+
+            {
+                icon: "/calendar.png",
+                label: "Eventos",
+                href: "/dashboard/list/events",
+                visible: ["admin", "teacher", "student", "parent"],
             },
             {
                 icon: "/message.png",
-                label: "Messages",
-                href: "/messages"
+                label: "Mensagens",
+                href: "/dashboard/list/messages",
+                visible: ["admin", "teacher", "student", "parent"]
             },
             {
                 icon: "/announcement.png",
-                label: "Announcements",
-                href: "/announcements "
+                label: "Anúncios",
+                href: "/dashboard/list/announcements ",
+                visible: ["admin", "teacher", "student", "parent"]
             },
 
 
@@ -63,21 +95,24 @@ export const menuItems = [
         ]
     },
     {
-        title: "OTHER",
+        title: "OUTROS",
         items: [
             {
                 icon: "/profile.png",
-                label: "Profile",
-                href: "/profile"
+                label: "Perfil",
+                href: "/profile",
+                visible: ["admin", "teacher", "student", "parent"]
             }, {
                 icon: "/setting.png",
-                label: "Settings",
-                href: "/settings"
+                label: "Configurações",
+                href: "/settings",
+                visible: ["admin", "teacher", "student", "parent"]
             },
             {
                 icon: "/logout.png",
-                label: "Logout",
-                href: "/logout"
+                label: "Desconectar",
+                href: "/logout",
+                visible: ["admin", "teacher", "student", "parent"]
             },
 
         ]
