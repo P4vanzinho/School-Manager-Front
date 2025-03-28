@@ -30,7 +30,7 @@ const Pagination = ({ page, count }: PaginationProps) => {
         disabled={!hasPrev}
         className="py-2 px-4 rounded-md bg-slate-200 text-xs font-semibold disabled:opacity-50 disabled:cursor-not-allowed"
       >
-        Prev
+        Anterior
       </button>
       <div className="flex items-center gap-2 text-sm">
         {pageButtons.map((pageIndex) => (
@@ -48,7 +48,7 @@ const Pagination = ({ page, count }: PaginationProps) => {
         onClick={() => changePage(page + 1)}
         disabled={!hasNext}
       >
-        Next
+        Próxima
       </button>
     </div>
   );

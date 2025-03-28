@@ -34,7 +34,7 @@ export const menuItems = [
             },
             {
                 icon: "/class.png",
-                label: "Aulas",
+                label: "Classes",
                 href: "/dashboard/list/classes",
                 visible: ["admin", "teacher"]
             },
